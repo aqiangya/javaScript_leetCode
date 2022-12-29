@@ -9,8 +9,8 @@ var reverse = function (x) {
   const list = (str + "").split("");
   const strList = list.reverse().join("");
   if (
-    number(strList) > Math.pow(2, 31) - 1 ||
-    number(strList) < -Math.pow(2, 31)
+    Number(strList) > Math.pow(2, 31) - 1 ||
+    Number(strList) < -Math.pow(2, 31)
   )
     return 0;
   return x < 0 ? Number("-" + strList) : Number(strList);
